@@ -7,29 +7,23 @@
           dark
         >
         <logo-app></logo-app>
-
-          <v-spacer></v-spacer>
-
-          <v-btn
-            href="https://github.com/vuetifyjs/vuetify/releases/latest"
-            target="_blank"
-            text
-          >
-            <span class="mr-2">Latest Release</span>
-            <v-icon>mdi-open-in-new</v-icon>
-          </v-btn>
+        <v-spacer></v-spacer>
+        <navigation-menu></navigation-menu>
         </v-app-bar>
     </v-app>
 </template>
 
 <script>
+//import HeaderNav from './navigationMenu.vue'
 import LogoApp  from './LogoApp.vue'
-//import HeaderLogo from './HeaderLogo.vue'
+import navigationMenu from './navigationMenu.vue'
 
 export default{
     name:'HeaderApp',
     components:{
-        'logo-app': LogoApp
+        'logo-app': LogoApp,
+        'navigation-menu':navigationMenu,
+  
     },
     data: () => ({ value: 1 }),
     
