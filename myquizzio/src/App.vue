@@ -1,20 +1,21 @@
 <template>
   <v-app>
-    
     <v-main>
-      <HeaderApp/>
+      <header-app></header-app>
+      <mybody-home></mybody-home>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HeaderApp from './components/HeaderApp';
-
+import HeaderApp from './components/headerTop/HeaderApp'
+import bodyHome from './components/bodyPage/bodyHome.vue'
 export default {
   name: 'App',
 
   components: {
-    HeaderApp,
+    'header-app':HeaderApp,
+    'mybody-home':bodyHome,
   },
 
   data: () => ({
@@ -22,3 +23,16 @@ export default {
   }),
 };
 </script>
+
+<style>
+.v-application--wrap {
+    flex: 1 1 auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 0vh;
+    max-width: 100%;
+    position: relative;
+    }
+</style>
