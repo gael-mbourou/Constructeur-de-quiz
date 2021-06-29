@@ -2,20 +2,21 @@
   <v-app>
     <v-main>
       <header-app></header-app>
-      <mybody-home></mybody-home>
+     
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
 
 <script>
 import HeaderApp from './components/headerTop/HeaderApp'
-import bodyHome from './components/bodyPage/bodyHome.vue'
+
 export default {
   name: 'App',
 
   components: {
     'header-app':HeaderApp,
-    'mybody-home':bodyHome,
+  
   },
 
   data: () => ({
