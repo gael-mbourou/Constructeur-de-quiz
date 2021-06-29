@@ -1,6 +1,5 @@
 <template>
   <div>
-    <p>Page Login</p>
     <b-container class="bv-example-row">
         <b-row class="text-center">
             <b-col></b-col>
