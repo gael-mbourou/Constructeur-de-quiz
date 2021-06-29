@@ -1,5 +1,6 @@
 <template>
     <div class="loginFonm">
+        <h4>Inscription</h4>
         <label >Nom</label>
         <b-form-input type="text" v-model="name" ></b-form-input>
         <label >Adresse email</label>
