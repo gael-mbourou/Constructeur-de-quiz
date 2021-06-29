@@ -3,7 +3,7 @@
     <v-btn
       class="ma-2"
       outlined
-      color="indigo" :href="quelLien">
+       :href="quelLien">
       Testez maintenent
 
     </v-btn>
@@ -12,9 +12,9 @@
 
 <script>
   export default {
-      name:'Bouton',
+      name:'TestingBouton',
       Lien:'quelLien',
-      props:['quelLien']
+      props:['quelLien',]
   }
 </script>
 
