@@ -6,7 +6,7 @@
     </b-col>
     <b-col>
         <h1>Tester Gratuitement</h1><br/><p>La construction d\'un questionnaire se fait en quelques clics. Glissez-déposez vos questions dans l\'interface de construction et rédigez vos questions. Attribuez des notes pour évaluer les connaissances, ajoutez un minuteur et proposez un texte de correction.</p>
-        <TestingBouton></TestingBouton>
+        <TestingBouton :quelLien="LienBouton"></TestingBouton>
     </b-col>
   </b-row>
 </b-container>
@@ -21,6 +21,7 @@ import TestingBouton from '../../homeCaroussel/carousselButton.vue'
                 LienImage:['https://gad-digital.com/gad-digital_uploads/2021/06/Kids-Studying-from-Home-pana.png'],
                 TexteContent:'La construction d\'un questionnaire se fait en quelques clics. Glissez-déposez vos questions dans l\'interface de construction et rédigez vos questions. Attribuez des notes pour évaluer les connaissances, ajoutez un minuteur et proposez un texte de correction. ',
                 TexteTitle:'Tester Gratuitement',
+                LienBouton:2
             }
         },
         components:{

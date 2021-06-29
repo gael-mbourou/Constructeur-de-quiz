@@ -10,7 +10,7 @@
                 {{ myslide }}
                 </div>
                 <testCaroussel :contenuTextuel="TexteCaroussel[i]"></testCaroussel>
-                <TestingBouton :quelLien="lienBouton[i]"/>
+                <TestingBouton :quelLien="i"/>
               </v-col>
               <v-col>
                 <v-img max-height="550" max-width="600" v-bind:src="ImageSlider[i]"></v-img>
@@ -37,7 +37,7 @@ export default{
     return {
       ImageSlider:['https://gad-digital.com/gad-digital_uploads/2021/06/quiz_a_distance.png','https://gad-digital.com/gad-digital_uploads/2021/06/quiz_answers.png'],
       TexteCaroussel:['Fini avec les questionnaires papier','révisez vos notions par des quiz en ligne'],
-      lienBouton:['https://gad-digital.com/','https://maisondemisericorde.com/'],
+      //lienBouton:['https://gad-digital.com/','https://maisondemisericorde.com/'],
       colors: [
         'indigo',
         'warning',
