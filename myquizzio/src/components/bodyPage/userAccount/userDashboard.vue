@@ -27,7 +27,7 @@
 
 <script>
 import dashboardDesktopHeader from './DashboardDesktopHeader.vue'
-import dashboardSideBar from './dashboardSideBar.vue'
+import dashboardSideBar from './desktopSideBar.vue'
   export default {
       name:'userDashboard',
     data: () => ({
