@@ -1,28 +1,29 @@
 <template>
   <div>
      <v-btn
-        href="#"
+        :href="loginLink"
         target="_blank"
         text
       >
-        <span class="mr-2">Login</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-      <v-btn
-        href="#"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Register</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <span class="mr-2">Login/Register</span>
+        <BIconLock font-scale="1.5"></BIconLock>
       </v-btn>
   </div>
 </template>
 
 <script>
+import { BIconLock} from 'bootstrap-vue'
+
   export default {
       name:'navigationMenu',
-
+      components:{
+      BIconLock,
+      },
+      data(){
+        return{
+          loginLink:'/login',
+        }
+      }
   }
 </script>
 

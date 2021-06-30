@@ -2,7 +2,6 @@
   <v-app>
     <v-main>
       <header-app></header-app>
-     
       <router-view></router-view>
     </v-main>
   </v-app>
@@ -26,7 +25,7 @@ export default {
 </script>
 
 <style>
-.v-application--wrap {
+.v-application--wrap{
     flex: 1 1 auto;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
