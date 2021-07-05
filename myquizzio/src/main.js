@@ -8,6 +8,8 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueRouter from 'vue-router'
 import quizzioRoutes from './quizzioRoutes'
 
+
+
 Vue.use(VueRouter)
     // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
@@ -21,6 +23,7 @@ const myrouter = new VueRouter({
     routes: quizzioRoutes,
 
 })
+
 
 new Vue({
     vuetify,

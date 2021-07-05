@@ -12,11 +12,8 @@
           </v-col>
             
           <v-col>
-            <v-sheet
-              min-height="70vh"
-              rounded="lg"
-            >
-              <!--  -->
+            <v-sheet min-height="70vh" rounded="lg" >
+              <newQuiz v-if="newQ"></newQuiz>
             </v-sheet>
           </v-col>
         </v-row>
@@ -28,14 +25,20 @@
 <script>
 import dashboardDesktopHeader from './DashboardDesktopHeader.vue'
 import dashboardSideBar from './desktopSideBar.vue'
+import newQuiz from './quizGenerator/newQuiz.vue'
+
   export default {
       name:'userDashboard',
     data: () => ({
-     //mettre ici les données traitées
+     newQ:true,
+    /* myQ:false,
+     participantsQ:false,*/
     }),
     components:{
       dashboardDesktopHeader,
       dashboardSideBar,
+      newQuiz,
+    
     }
   }
 </script>
