@@ -10,6 +10,7 @@ import quizzioRoutes from './quizzioRoutes'
 
 
 
+
 Vue.use(VueRouter)
     // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
