@@ -4,7 +4,7 @@
         <b-col sm="2"></b-col>
         <b-col sm="8" class="text-center">
         <h2>Bienvenue dans votre espace</h2>
-        <b-img src="https://gad-digital.com/gad-digital_uploads/2021/07/Learing-for-student.jpg" fluid alt="Responsive image"  style="width:300px; height:auto;"></b-img>
+        <b-img src="https://gad-digital.com/gad-digital_uploads/2021/07/Learing-for-student.jpg" fluid alt="Responsive image"  style="width:300px;height:auto;"></b-img>
         
         </b-col>
         <b-col sm="2"></b-col>

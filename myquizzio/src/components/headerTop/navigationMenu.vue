@@ -1,9 +1,9 @@
 <template>
   <div>
      <v-btn
-        :href="loginLink"
         target="_blank"
         text
+        @click="goTouserAccount"
       >
         <span class="mr-2">Login/Register</span>
         <BIconLock font-scale="1.5"></BIconLock>
@@ -21,8 +21,13 @@ import { BIconLock} from 'bootstrap-vue'
       },
       data(){
         return{
-          loginLink:'/login',
+         
         }
+      },
+      methods:{
+        goTouserAccount(){
+        this.$router.push('/useraccount')
+      }
       }
   }
 </script>
